@@ -20,7 +20,7 @@ export default function Home() {
   const [remainingIndices, setRemainingIndices] = useState<number[]>([]);
 
   const getRandomMeme = () => {
-    const memes = memesData.memes;
+    const memes = memesData.memes as Meme[];
     
     // Eğer kalan index yoksa, tüm indexleri yeniden doldur
     let indices = remainingIndices;
