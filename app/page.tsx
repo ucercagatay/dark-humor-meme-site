@@ -13,6 +13,15 @@ type Meme = {
   rating: number;
 };
 
+// Type guard to ensure meme data is valid
+const isMeme = (meme: any): meme is Meme => {
+  return meme && 
+    typeof meme.id === 'number' &&
+    ['text', 'image', 'video'].includes(meme.type) &&
+    typeof meme.content === 'string' &&
+    typeof meme.rating === 'number';
+};
+
 export default function Home() {
   const [currentMeme, setCurrentMeme] = useState<Meme | null>(null);
   const [liked, setLiked] = useState(false);
@@ -20,7 +29,7 @@ export default function Home() {
   const [remainingIndices, setRemainingIndices] = useState<number[]>([]);
 
   const getRandomMeme = () => {
-    const memes = memesData.memes as Meme[];
+    const memes = (memesData.memes as any[]).filter(isMeme);
     
     // Eğer kalan index yoksa, tüm indexleri yeniden doldur
     let indices = remainingIndices;
