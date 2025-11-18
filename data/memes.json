@@ -1,0 +1,54 @@
+{
+  "memes": [
+    {
+      "id": 1,
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/GkVLb1tWYAAgDZI?format=jpg&name=small",
+      "content": "Dark humor meme",
+      "rating": 9
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/G50jbv-WEAAx50q?format=jpg&name=small",
+      "content": "Dark humor meme 2",
+      "rating": 8
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/Ght2vU_X0AAxe3-?format=jpg&name=small",
+      "content": "Dark humor meme 3",
+      "rating": 9
+    },
+    {
+      "id": 4,
+      "type": "video",
+      "url": "https://youtube.com/shorts/pVEEsUy2Ca4",
+      "content": "Dark humor YouTube Short",
+      "rating": 8
+    },
+    {
+      "id": 5,
+      "type": "video",
+      "url": "https://youtube.com/shorts/Jo6MLzIw2Wc",
+      "content": "Dark humor YouTube Short 2",
+      "rating": 9
+    },
+    {
+      "id": 6,
+      "type": "video",
+      "url": "https://www.youtube.com/shorts/WAbDJuz47no",
+      "content": "Dark humor YouTube Short 3",
+      "rating": 9
+    },
+    {
+      "id": 7,
+      "type": "video",
+      "url": "https://youtube.com/shorts/pJbcizd2qIo",
+      "content": "Dark humor YouTube Short 4",
+      "rating": 8
+    }
+  ],
+  "lastUpdated": "2024-11-18T18:35:00Z"
+}
